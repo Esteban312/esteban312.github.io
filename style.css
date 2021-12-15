@@ -6,15 +6,21 @@
     text-decoration: none;
     scroll-behavior: smooth; /* averiguar que carajo hace */
 }
+
 main{
     background: linear-gradient(135deg, #4a5668, #554039, #564969);
     background-size: 500%;
+    background-image: url(backgroundLaptop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* height: 20em; */
 }
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 1000; /* averiguar que carajo hace */
-    background: #1b1a1a;
+    background: #020202fa;
     padding: 25px;
     text-align: center;
 }
@@ -47,6 +53,7 @@ h1, h2{
     margin: 10px 0px;
     font-size: 4rem;
 }
+
 .container{
     min-width: 60vw;
     max-width: 60vw;
@@ -63,7 +70,7 @@ span{
 }
 .title-sec, .contain-sec{
     margin-bottom: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.877);
     border-radius: 9px;
 }
 .title-sec{
@@ -78,7 +85,14 @@ span{
 table{
     background-color: rgb(139, 180, 98);
 }
-
+@keyframes machine{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
 
 @media (max-width: 600px) {
     header{
@@ -107,7 +121,7 @@ table{
     }
     .title-sec, .contain-sec{
         margin-bottom: 10px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.877);
         padding: 15px;
         border-radius: 10px;
     }
