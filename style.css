@@ -1,135 +1,168 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* averiguar que carajo hace */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    scroll-behavior: smooth; /* averiguar que carajo hace */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('backgroundLaptop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+    padding-bottom: 50px;
 }
 
-main{
-    background: linear-gradient(135deg, #4a5668, #554039, #564969);
-    background-size: 500%;
-    background-image: url(backgroundLaptop.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    /* height: 20em; */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
-header{
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 1000; /* averiguar que carajo hace */
-    background: #020202fa;
-    padding: 25px;
+
+h1, h2, h3, h5 {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.923);
     text-align: center;
 }
 
-header nav a{
-    padding: 10px 25px;
-    color: rgb(202, 201, 201);
-    font-size: 20px;
-    text-transform: capitalize; /* averiguar que carajo hace */
+h3 {
+    margin-bottom: 1rem;
 }
 
+section {
+    padding: 40px 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    animation: slideIn 0.8s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.896);
+}
 
-header nav a:hover{
-    color: white;
-    text-shadow: 1px 1px 7px rgb(136, 136, 136);
+.card {
+    margin-bottom: 20px;
+    background-color: #222;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
 }
-header nav a {
-    transition: 0.2s;
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
-section{
-    min-height: 100vh;
+
+.card-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.img-fluid {
+    border-radius: 5px;
+    cursor: pointer;
+    max-height: 200px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.modal-content {
+    background-color: #000;
+    border: none;
+    padding: 1rem;
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    color: #fff;
+}
+
+ul li::before {
+    content: '\2022';
+    color: #0d6efd;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+#contactos {
+    text-align: center;
+}
+
+#contactos .iconos-contacto {
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: rgb(248, 248, 248);
-    /* font-weight: bolder;  */
-    padding-bottom: 70px; /* averiguar que carajo hace */
-}
-h1, h2{
-    margin: 10px 0px;
-    font-size: 4rem;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.container{
-    min-width: 60vw;
-    max-width: 60vw;
+#contactos .iconos-contacto a {
+    font-size: 2rem;
+    transition: transform 0.3s ease;
 }
-span{
+
+#contactos .iconos-contacto a:hover {
+    transform: scale(1.2);
+}
+
+.fa-envelope {
+    color: #c71610;
+}
+
+.fa-whatsapp {
+    color: #25D366;
+}
+
+.fa-map-marker-alt {
+    color: #d9534f;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-github {
+    color: #ffffff;
+}
+
+
+a {
+    color: #0dcaf0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #66e0ff;
     text-decoration: underline;
 }
-.color-01{
-    color: rgb(255, 180, 68);
+
+ul li {
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
 }
-.color-02{
-    color: rgb(255, 180, 68);
-    text-decoration: none;
-}
-.title-sec, .contain-sec{
-    margin-bottom: 50px;
-    background-color: rgba(0, 0, 0, 0.877);
-    border-radius: 9px;
-}
-.title-sec{
-    margin-top: 15vh;
-    padding: 20px;
-    text-align: center;
-}
-.contain-sec{
-    padding: 35px;
+.card-body p {
+    font-size: 0.95rem;
 }
 
-table{
-    background-color: rgb(139, 180, 98);
-}
-@keyframes machine{
-    from{
-        width: 100%;
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
     }
-    to{
-        width: 0;
+    h2 {
+        font-size: 1.3rem;
     }
-}
-
-@media (max-width: 600px) {
-    header{
-        position: fixed;
-        top: 0; left: 0; right: 0;
-        z-index: 1000; /* averiguar que carajo hace */
-        /* background: #ce1414; */
-        padding: 3vh;
-        text-align: center;
+    h3 {
+        font-size: 1.2rem;
     }
-    header nav a{
-        padding: 0px 8px;
-        color: rgb(202, 201, 201);
-        font-size: 15px;
-        text-transform: capitalize; /* averiguar que carajo hace */
-        transition: none;
+    .card-title {
+        font-size: 1rem;
     }
-    h1, h2{
-        font-size: 40px;
-    }
-    h2{
-        margin: 10px 0px;
-    }
-    main{
-        animation: none;
-    }
-    .title-sec, .contain-sec{
-        margin-bottom: 10px;
-        background-color: rgba(0, 0, 0, 0.877);
-        padding: 15px;
-        border-radius: 10px;
-    }
-    .contain-sec{
-        margin-top: 70px;
-        text-align: center;
-    }
-    .container{
-        min-width: 90vw;
+    .card-text {
+        font-size: 0.9rem;
     }
 }

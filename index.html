@@ -1,74 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Esteban Quinteros, desarrollador web y profesor de programación.">
+    <title>Esteban Quinteros - Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Esteban Quinteros</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#works">Works</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <div class="container">
-                <div class="title-sec">
-                    <p class="color-01">HELLO THERE! MY NAME IS</p>
-                    <h1><span class="color-01">E</span>steban Quinteros</h1>
-                    
-                </div>
-            <div class="contain-sec">
-                <div>
-                    <p>>Web Developer jr { };</p>
-                </div>
-            </div> 
-            </div>
-            
+    <div class="container mt-5">
+        <header class="text-center text-white mb-5">
+            <h1>Esteban Quinteros</h1>
+            <h2>Desarrollador Web y Profesor de Programación</h2>
+        </header>
+
+        <section id="perfil">
+            <h3><i class="fas fa-user"></i> Perfil</h3>
+            <p>Soy un desarrollador web y profesor de programación con experiencia en enseñanza y desarrollo de
+                aplicaciones web. Me apasiona compartir mis conocimientos y crear soluciones innovadoras.</p>
         </section>
-        <section id="about">
-            <div class="container">
-                <div class="title-sec">
-                    <p class="color-01">LET ME TELL YOU SOMETHING</p>
-                    <h2><span class="color-01">A</span>bout me</h2>   
+
+        <section id="proyectos">
+            <h3><i class="fas fa-code"></i> Proyectos</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">PianoCenter (React)</h5>
+                            <p class="card-text">Aplicación web desarrollada en React simulando una tienda de
+                                instrumentos musicales.</p>
+                            <a href="https://pianocenter.netlify.app/" target="_blank"
+                                class="btn btn-outline-info btn-block">Ver proyecto</a>
+                        </div>
+                    </div>
                 </div>
-            <div class="contain-sec">
-                <p>I'm a <span class="color-02">web developer jr</span> from <span class="color-02">Argentina</span>, I usually develop static pages, small services, personal blogs and online stores, I am more dedicated to the <span class="color-02">FrontEnd</span> part of web development. I am constantly learning new programming languages to add to my experience</p><br>
-                <p><span class="color-01">Skills</span></p><br>
-                <p><span class="color-02">>Html, Css, Javascript, jQuery, Php, MySQL & Git</span</p><br><br>
-                <p>Now I am learning how to use <span class="color-02">React.js</span> </p>
-            </div> 
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Animaciones con Hover</h5>
+                            <p class="card-text">Ejemplos de animaciones con hover aplicadas a imágenes y textos. Ideal
+                                para aprender transiciones CSS.</p>
+                            <a href="https://esteban312.github.io/animaciones-michis/" target="_blank"
+                                class="btn btn-outline-info btn-block">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenador de Ejercicio en Casa</h5>
+                            <p class="card-text">App para generar rutinas de entrenamiento personalizadas con
+                                temporizador, modo claro/oscuro y más.</p>
+                            <a href="https://contador-ejercicio.netlify.app/" target="_blank"
+                                class="btn btn-outline-info btn-block">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Interactive Rating Component</h5>
+                            <p class="card-text">Desafío de Frontend Mentor donde el usuario califica del 1 al 5 y se
+                                muestra un agradecimiento con el puntaje.</p>
+                            <a href="https://boton-interactivo-puntaje.netlify.app/" target="_blank"
+                                class="btn btn-outline-info btn-block">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">PizzaCoder</h5>
+                            <p class="card-text">Sitio web estático pensado como ejemplo introductorio para estudiantes
+                                que comienzan en desarrollo web.</p>
+                            <a href="https://esteban312.github.io/pizzacoder/" target="_blank"
+                                class="btn btn-outline-info btn-block">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Locutora</h5>
+                            <p class="card-text">Página personal para locutora radial, creada como ejemplo de portfolio
+                                profesional con HTML y CSS.</p>
+                            <a href="https://esteban312.github.io/portfoliobelencottone/" target="_blank"
+                                class="btn btn-outline-info btn-block">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">GitHub User Search</h5>
+                            <p class="card-text">Buscador de usuarios de GitHub. Ingresá un nombre y obtené su perfil,
+                                avatar y datos públicos al instante.</p>
+                            <a href="https://esteban312.github.io/userquery" target="_blank"
+                                class="btn btn-outline-info btn-block">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
-        <section id="works">
-            <div class="container">
-            <div class="title-sec">
-                <h2><span class="color-01">L</span>ast Works</h2>
-            </div>
-            <div class="contain-sec">
-                <p>Click on title:</p>
-                ><a class="color-02" href="https://esteban312.github.io/userquery/" target="_blank"> Github User Data Query</a>
-            </div>
-        </div></section>
-        <section id="contact">
-            <div class="container">
-                <div class="title-sec">
-                    <h2><span class="color-01">C</span>ontact</h2>
-                    
+
+        <section id="certificados">
+            <h3><i class="fas fa-certificate"></i> Certificados</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Codo a Codo 4.0</h5>
+                            <img src="titulos/codoacodo.jpeg" alt="Certificado Codo a Codo" class="img-fluid"
+                                data-toggle="modal" data-target="#modalCodo">
+                        </div>
+                    </div>
                 </div>
-            <div class="contain-sec">
-                <p>><span class="color-02"> Mail</span> esteban.quinteros993@gmailcom<br><br>>
-                <a class="color-01" href="https://www.linkedin.com/in/esteban-quinteros-75b6ba201/" target="_blank">Linkedin</a></p><br>>
-                <a class="color-01" href="https://github.com/Esteban312" target="_blank">Github Profile</a>
-            </div> 
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">JavaScript</h5>
+                            <img src="titulos/js.jpg" alt="Certificado JavaScript" class="img-fluid" data-toggle="modal"
+                                data-target="#modalJS">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">React</h5>
+                            <img src="titulos/react.png" alt="Certificado React" class="img-fluid" data-toggle="modal"
+                                data-target="#modalReact">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modals -->
+            <div class="modal fade" id="modalCodo" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="titulos/codoacodo.jpeg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalJS" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="titulos/js.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalReact" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="titulos/react.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
+
+        <section id="trabajos">
+            <h3><i class="fas fa-briefcase"></i>Experiencia Laboral</h3>
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Profesor de Tecnología</h5>
+                                <p class="card-text">
+                                    Enseñanza de programación con Scratch, Microbit, diseño 3D en Tinkercad, robótica
+                                    con Lego WEDO, edición multimedia con Canva, y herramientas interactivas como Makey
+                                    Makey. Uso de Google Classroom y entornos digitales colaborativos.
+                                </p>
+                                <p class="text-muted">Instituto Toratenu | Mayo 2022 – Actualidad</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Profesor de Desarrollo Web</h5>
+                                <p class="card-text">
+                                    Enseñanza desde cero de maquetado con HTML, CSS, Bootstrap y SASS. Acompañamiento en
+                                    el desarrollo de proyectos, corrección de trabajos prácticos y evaluaciones finales.
+                                </p>
+                                <p class="text-muted">Coderhouse | Noviembre 2022 – Actualidad</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Profesor de Tecnología (Nivel Secundario)</h5>
+                                <p class="card-text">
+                                    Enseñanza de diseño web (HTML, CSS), hojas de cálculo con Excel, bases de datos con
+                                    MySQL y edición de imágenes con Photoshop.
+                                </p>
+                                <p class="text-muted">St Patrick School | Febrero 2023 – Septiembre 2023 (Suplencia)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Mentor - Argentina Programa</h5>
+                                <p class="card-text">
+                                    Formación asincrónica en lógica de programación, formularios, funciones y POO
+                                    utilizando Gobstones, JavaScript y Ruby. Enfoque pedagógico centrado en la
+                                    resolución de problemas.
+                                </p>
+                                <p class="text-muted">INTI | Enero 2022 – Marzo 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="estudios">
+            <h3><i class="fas fa-graduation-cap"></i> Estudios</h3>
+            <ul>
+                <li><strong>Coderhouse - React JS (2025)</strong><br>
+                    JSX, transpiling y componentes reutilizables. Manejo de asincronía con Promises, Hooks
+                    personalizados, patrones de renderizado, gestión de estado con Context, navegación con React Router
+                    y conexión a bases de datos con Firebase.
+                </li>
+
+                <li><strong>Codo a Codo 4.0 - Desarrollo Fullstack Node JS (2023)</strong><br>
+                    Maquetado web con HTML, CSS y Bootstrap. Programación con JavaScript, Node.js, Express y bases de
+                    datos MySQL. Aplicaciones web completas bajo arquitectura MVC.
+                </li>
+
+                <li><strong>Universidad Tecnológica Nacional - FRRE</strong><br>
+                    Formación general en desarrollo web y bases tecnológicas. Cursos complementarios en diseño,
+                    programación y bases de datos.
+                </li>
+
+                <li><strong>Centro de Formación Profesional N°1</strong><br>
+                    <em>Trayecto de Programador | 2020</em><br>
+                    <em>Desarrollo Web con JavaScript | 2021</em><br>
+                    Técnicas de Programación Orientada a Objetos con Java. Desarrollo dinámico de sitios web con HTML,
+                    CSS, JavaScript. Manipulación multimedia, manejo de eventos e interacción con MySQL.
+                </li>
+            </ul>
+                <section id="certificados">
+            <h3><i class="fas fa-certificate"></i> Certificados</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Codo a Codo 4.0</h5>
+                            <img src="titulos/codoacodo.jpeg" alt="Certificado Codo a Codo" class="img-fluid"
+                                data-toggle="modal" data-target="#modalCodo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">JavaScript</h5>
+                            <img src="titulos/js.jpg" alt="Certificado JavaScript" class="img-fluid" data-toggle="modal"
+                                data-target="#modalJS">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">React</h5>
+                            <img src="titulos/react.png" alt="Certificado React" class="img-fluid" data-toggle="modal"
+                                data-target="#modalReact">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modals -->
+            <div class="modal fade" id="modalCodo" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="titulos/codoacodo.jpeg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalJS" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="titulos/js.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalReact" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src="titulos/react.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <section id="contactos">
+            <h3><i class="fas fa-address-book"></i> Contacto</h3>
+            <p><i class="fas fa-envelope"></i> <a
+                    href="mailto:esteban.quinteros993@gmail.com">esteban.quinteros993@gmail.com</a></p>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491150492416" target="_blank">11 5049 2416</a>
+            </p>
+            <p><i class="fas fa-map-marker-alt"></i>Buenos Aires, Capital Federal</p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/esteban-quinteros1/"
+                    target="_blank">LinkedIn</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/Esteban312" target="_blank">GitHub</a></p>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
